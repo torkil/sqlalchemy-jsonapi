@@ -39,7 +39,7 @@ def as_relationship(to_many=False, linked_key=None, link_key=None,
     return wrapper
 
 
-class JSONAPIMixin:
+class JSONAPIMixin(object):
 
     """ Mixin that enables serialization of a model. """
 
@@ -77,7 +77,7 @@ class SkipType(object):
     pass
 
 
-class JSONAPI:
+class JSONAPI(object):
 
     """ The main JSONAPI serializer class. """
 
